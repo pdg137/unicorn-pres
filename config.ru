@@ -7,6 +7,7 @@ run Proc.new { |env|
   when "/"
     content = File.read("index.html")
   when "/time"
+    sleep 0.1
     content_type = "text/plain"
     content = "Time is #{Time.now}"
   when "/jquery.js"
