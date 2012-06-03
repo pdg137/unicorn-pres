@@ -1,2 +1,4 @@
 Install a basic Ubuntu server.
-apt-get install ruby htop emacs
+apt-get install ruby htop emacs rubygems
+gem install bundler
+
