@@ -1,0 +1,2 @@
+Install a basic Ubuntu server.
+apt-get install ruby htop emacs
