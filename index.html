@@ -10,7 +10,7 @@ var last_load = (new Date()).getTime()
 setInterval(function()
 {
   $('#time').load('/time', complete)
-}, 250)
+}, 1000)
 
 function complete(response, status, xhr)
 {
@@ -20,7 +20,7 @@ function complete(response, status, xhr)
 
 setInterval(function()
 {
-  if((new Date()).getTime() - last_load > 500)
+  if((new Date()).getTime() - last_load > 2000)
   {
     $('#time').html("TIMEOUT")
   }
