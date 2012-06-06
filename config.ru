@@ -7,17 +7,17 @@ class App
 
     case env['REQUEST_PATH']
     when "/"
-      content = File.read("index.html")
+      content = File.open("index.html")
     when "/time"
       sleep 0.5
       content_type = "text/plain"
-      content = "Time is #{Time.now}"
+      content = ["Time is #{Time.now}"]
     when "/jquery.js"
       content_type = "text/javascript"
-      content = File.read("jquery.js")
+      content = File.open("jquery.js")
     else
       response = 404
-      content = "File not found!"
+      content = ["File not found!"]
     end
 
     [

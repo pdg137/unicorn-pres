@@ -1,5 +1,5 @@
 Install a basic Ubuntu server.
-apt-get install ruby htop emacs rubygems haproxy
+apt-get install ruby htop emacs rubygems haproxy apache2-utils
 gem install bundler
 
 TO RUN UNICORN
